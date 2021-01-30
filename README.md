@@ -5,6 +5,7 @@ With webmon you are able to monitor your system using a static website. To ensur
 # How to install dependencies?
 
 These software dependencies are used:
+* bash
 * python3
 * jinja2
 * cherrypy
@@ -23,7 +24,7 @@ pip install -U -r requirements.txt pip
 Initially you have to create the index.html. This file can be served using webmon.py or any other webserver. 
 
 ```
-./update.py
+./update.sh
 ./webmon.py
 ```
 
@@ -33,7 +34,7 @@ Initially you have to create the index.html. This file can be served using webmo
 If you want to update every minute just add this lines to your crontab using `crontab -e`
 
 ```
-* * * * * YOUR_PATH_TO_WEBMON/update.py
+* * * * * YOUR_PATH_TO_WEBMON/update.sh
 ```
 
 
