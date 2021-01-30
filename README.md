@@ -23,7 +23,7 @@ pip install -U -r requirements.txt pip
 Initially you have to create the index.html. This file can be served using webmon.py or any other webserver. 
 
 ```
-./update.py > html/index.html
+./update.py
 ./webmon.py
 ```
 
