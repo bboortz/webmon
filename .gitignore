@@ -130,3 +130,4 @@ dmypy.json
 
 # webmon
 index.html
+*.data.json

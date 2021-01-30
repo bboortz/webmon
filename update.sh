@@ -7,4 +7,5 @@ FNAME=$( readlink -f $0 )
 DNAME=${FNAME%/*}
 
 source ${DNAME}/.venv/bin/activate
-${DNAME}/update.py
+${DNAME}/gather.py
+${DNAME}/render.py

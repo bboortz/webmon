@@ -5,8 +5,8 @@ With webmon you are able to monitor your system using a static website. To ensur
 # Features
 
 * Creating/Updating static websites which shows monitoring data
-* Monitored data can be modified in update.py
-* Monitoring data can be served using webmon.py or any webserver
+* Monitored data can be modified in gather.py
+* Monitored data can be served using webmon.py or any webserver
 * Automatic refresh of webmon UI every 30 seconds
 
 
@@ -48,4 +48,4 @@ If you want to update every minute just add this lines to your crontab using `cr
 
 # How to add your own cards?
 
-Edit the card definition in update.py
+Edit the card definition in gather.py
