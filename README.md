@@ -1,13 +1,21 @@
 # webmon
 
-With webmon you are able to monitor your system using a static website. To ensure your monitoring is visible in your browser, put webmon's update.sh to your crontab and add webmon's url to your new tab config in your browser.
+With webmon you are able to monitor your systems using a static website. To ensure your monitoring is visible in your browser, put webmon's update.sh to your crontab and add webmon's url to your new tab config in your browser.
+
 
 # Features
 
-* Creating/Updating static websites which shows monitoring data
-* Monitored data can be modified in gather.py
+* Gathing monitoring data using gather.py
+  * Monitored data can be modified in gather.py
+* Creating/Updating static websites which shows monitoring data using render.py
+  * Able to render monitoring data from different system. Just put all the monitoring data into the tmp dir. render.py will take it and render one big screen.
 * Monitored data can be served using webmon.py or any webserver
 * Automatic refresh of webmon UI every 30 seconds
+
+
+# Example Screenshot
+
+![Screenshot](/screenshot.png?raw=true "Screenshot")
 
 
 # How to install dependencies?

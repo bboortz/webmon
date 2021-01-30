@@ -31,9 +31,11 @@
               <li class="nav-item active">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
+{% for host in hosts.hosts -%}
               <li class="nav-item">
                 <a class="nav-link" href="#{{ host.name }}">{{ host.name }}</a>
               </li>
+{% endfor %}
             </ul>
           </div>
         </div>
@@ -41,13 +43,14 @@
     </header>
 
     <main role="main">
-      <div class="container">
 
+{% for host in hosts.hosts -%}
+      <div class="container">
         <div class="album py-1 bg-light">
           <p class="float-end">{{ host.updated }}</a></p>
           <h2><a id="{{ host.name }}">{{ host.name }}</a></h2>
 
-{% for card in host.cards -%}
+    {% for card in host.cards -%}
           <div class="row">
             <div class="col-md-12">
               <div class="card mb-2 box-shadow">
@@ -56,16 +59,17 @@
               </div>
             </div>
           </div>
-{% endfor %}
+    {% endfor %}
         </div>
       </div>
+{% endfor %}
 
     </main>
 
     <footer class="text-muted">
       <div class="container">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>updated: {{ date }}</p>
+        <p>updated: {{ hosts.updated }}</p>
         <p>View webmon <a href="https://github.com/bboortz/webmon">on Github</a>. Proudly made with open source software!</p>
       </div>
     </footer>
