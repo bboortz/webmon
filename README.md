@@ -2,6 +2,8 @@
 
 With webmon you are able to monitor your systems using a static website. To ensure your monitoring is visible in your browser, put webmon's update.sh to your crontab and add webmon's url to your new tab config in your browser.
 
+![Screenshot](/screenshot.png?raw=true "Screenshot")
+
 
 # Features
 
@@ -13,16 +15,12 @@ With webmon you are able to monitor your systems using a static website. To ensu
 * Automatic refresh of webmon UI every 30 seconds
 
 
-# Example Screenshot
-
-![Screenshot](/screenshot.png?raw=true "Screenshot")
-
-
 # How to install dependencies?
 
-These software dependencies are used:
+These software dependencies are used mainly:
 * bash
 * python3
+* jsonpickle
 * jinja2
 * cherrypy
 
