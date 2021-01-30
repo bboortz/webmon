@@ -13,4 +13,4 @@ if [ ! -d "${DNAME}/.venv" ]; then
     python -m venv ${DNAME}/.venv
 fi
 source ${DNAME}/.venv/bin/activate
-pip install -U -r requirements.txt pip
+pip install -U -r ${DNAME}/requirements.txt pip
