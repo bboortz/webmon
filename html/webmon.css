@@ -4,20 +4,24 @@ main {
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer p {
   margin-bottom: .25rem;
 }
 
-.term-container {                                               
-  word-break: break-word;       
-  overflow-wrap: break-word;                  
-  font-family: Monaco, courier;                
-  font-size: 12px;                            
-  line-height: 20px;                           
-  padding: 14px 18px;                                                                          
-  white-space: pre-wrap;        
+.host-container {
+  margin-bottom: 2rem;
+}
+
+.term-container {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-family: Monaco, courier;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 14px 18px;
+  white-space: pre-wrap;
 }
