@@ -2,6 +2,14 @@
 
 With webmon you are able to monitor your system using a static website. To ensure your monitoring is visible in your browser, put webmon's update.sh to your crontab and add webmon's url to your new tab config in your browser.
 
+# Features
+
+* Creating/Updating static websites which shows monitoring data
+* Monitored data can be modified in update.py
+* Monitoring data can be served using webmon.py or any webserver
+* Automatic refresh of webmon UI every 30 seconds
+
+
 # How to install dependencies?
 
 These software dependencies are used:
