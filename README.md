@@ -28,9 +28,7 @@ These software dependencies are used mainly:
 Install the python dependencies:
 
 ```
-python -m venv .venv
-source .venv/bin/activate
-pip install -U -r requirements.txt pip
+./scripts/install.sh
 ```
 
 # How to use?
