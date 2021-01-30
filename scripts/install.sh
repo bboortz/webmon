@@ -10,7 +10,7 @@ DNAME=${DNAME%/*}
 date
 
 if [ ! -d "${DNAME}/.venv" ]; then
-    python -m venv ${DNAME}/.venv
+    python3 -m venv ${DNAME}/.venv
 fi
 source ${DNAME}/.venv/bin/activate
 pip install -U -r ${DNAME}/requirements.txt pip
