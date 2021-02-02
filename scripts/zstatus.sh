@@ -10,5 +10,9 @@ if [ "$ZFS_INST" == "not-installed" ]; then
 fi 
 
 zpool status -v
+echo
 zpool list -v
+echo
 zfs list
+echo
+zpool iostat -vl

@@ -8,6 +8,7 @@ DNAME=${FNAME%/*}
 
 date
 
+pidof bash
+
 source ${DNAME}/.venv/bin/activate
-python3 ${DNAME}/gather.py
-python3 ${DNAME}/render.py
+python3 ${DNAME}/webmon.py
