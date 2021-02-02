@@ -14,6 +14,7 @@ cherrypy.tree.mount(Root(), '/', config={
             },
     })
 
+cherrypy.server.socket_host: '0.0.0.0'
 cherrypy.server.socket_port = 8000
 cherrypy.engine.start()
 cherrypy.engine.block()

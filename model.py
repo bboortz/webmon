@@ -6,6 +6,7 @@
 class Config:
     def __init__(self, path):
         self.path = path
+        self.scripts_path = self.path + "/scripts"
         self.tmp_path = self.path + "/tmp"
         self.templates_path = self.path + "/templates"
         self.html_path = self.path + "/html"

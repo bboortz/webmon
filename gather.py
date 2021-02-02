@@ -34,6 +34,7 @@ cards = [
     Card("Uptime", run_command(['uptime']) ),
     Card("Memory", run_command(['free', '-m']) ),
     Card("Disk", run_command(['df', '-h']) ),
+    Card("ZFS", run_command([cfg.scripts_path + '/zstatus.sh']) ),
     Card("Internet", run_command(['ping', '-c2', 'google.com']) )
 ]
 
